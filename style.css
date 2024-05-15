@@ -1,0 +1,151 @@
+/* PHOTOGRAPHIC WORLD */
+
+body {
+    margin: 0px;
+    background-color: black;
+}
+.header {
+    padding-top: 20px;
+    font-size: 60px;
+    /* margin: 0px; */
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center ; 
+   }
+
+
+.title { 
+    display: inline-block;
+    position: relative;  
+    color: white;
+}
+.title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  } 
+.title:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.section1 {
+    margin-left: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    color: white;
+ } 
+.imgsec {
+    padding : 30px 30px ;
+    border: solid white 1px;
+}
+.infosec {
+    padding: 70px 300px 170px;
+}
+.section2 {
+    margin-right: 90px;
+    margin-left: 70px;
+    display: flex;
+    padding: 10px;
+    color: white; 
+}
+.class2 {
+    padding: 30px 30px;
+    border: solid white 1px;
+}
+.class22 {
+    padding:  90px 200px 90px;
+}
+.section3 {
+    margin-left: 90px;
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+.class3 {
+    padding : 30px 30px ;
+    border: solid white 1px;
+}
+.class33 {
+    padding: 110px 300px 150px;
+}
+.section4 {
+    margin-right: 90px;
+    margin-left: 90px;
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+.class4 {
+    padding: 30px 30px;
+    border: solid white 1px;
+}
+.class44 {
+    padding:  90px 200px 90px;
+}
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    background-color: rgb(36, 36, 36);
+}
+.footerdiv1 {
+    font-size: small;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-left: 90px;
+}
+.footerdiv2  {
+    font-size: small;
+    color: white;
+    padding-left: 900px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.btn {
+    background-color: rgb(36, 36, 36);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding-right:40px;
+    font-size: 15px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+ }
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+  }
+  
+.btn:hover span {
+    padding-right: 25px;
+  }
+  
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
